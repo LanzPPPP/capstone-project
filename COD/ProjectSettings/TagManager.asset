@@ -11,6 +11,8 @@ TagManager:
   - FeedbackModal
   - FeedbackTitle
   - FeedbackMessage
+  - SceneSwitcherOverlay
+  - SceneSwitchOverlay
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Interactable
   - 
   - 
   - 
@@ -27,8 +29,8 @@ TagManager:
   - 
   - 
   - Glow
-  - 
-  - 
+  - Ceiling
+  - Floor
   - 
   - 
   - 

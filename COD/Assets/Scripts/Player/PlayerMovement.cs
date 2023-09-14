@@ -4,8 +4,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController characterController;
 
-    private float currentSpeed;
-
     [Header("Normal Speed")]
     public float normalSpeed = 4f;
     private float normalSpeedFOV;
@@ -13,6 +11,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("Sprint Speed")]
     public float sprintSpeed = 6f;
     public float sprintSpeedFOV = 75f;
+
+    [Header("Gravity")]
+    public bool applyGravity = true;
+    public float gravity = -9.81f;
+    private Vector3 velocity;
+
+    private float currentSpeed;
 
 
     void Awake()
@@ -33,6 +38,11 @@ public class PlayerMovement : MonoBehaviour
 
         characterController.Move(move * currentSpeed * Time.deltaTime);
 
+        if (applyGravity)
+        {
+            velocity.y += gravity * Time.deltaTime;
+            characterController.Move(velocity * Time.deltaTime);
+        }
 
         if (Input.GetKey(KeyCode.LeftShift))
         {

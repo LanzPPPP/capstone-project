@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8144837632174334422}
   - component: {fileID: 1236409461940093707}
   - component: {fileID: 4312415701073258566}
+  - component: {fileID: 1102705442712064612}
   m_Layer: 5
   m_Name: AnswerNode
   m_TagString: AnswerNode
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentAfterDrag: {fileID: 0}
-  answer: UNASSIGNED VALUE
+  answer: Print
 --- !u!114 &4312415701073258566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +151,18 @@ MonoBehaviour:
   m_EffectColor: {r: 1, g: 1, b: 1, a: 1}
   m_EffectDistance: {x: 1, y: 1}
   m_UseGraphicAlpha: 1
+--- !u!225 &1102705442712064612
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213853234683122856}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8622949919523391123
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,10 +197,10 @@ RectTransform:
   m_Father: {fileID: 5142110985292036903}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 72.505, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 42.505, y: -16.4}
+  m_SizeDelta: {x: 75.01, y: 32.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8622949919523391127
 CanvasRenderer:
@@ -217,7 +230,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: UNASSIGNED VALUE
+  m_text: Print
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 94298567d2af43248b3d91f5d3c3a9a7, type: 2}
   m_sharedMaterial: {fileID: -6634247145333066243, guid: 94298567d2af43248b3d91f5d3c3a9a7,

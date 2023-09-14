@@ -19,8 +19,8 @@ public class OldGUIExamplesCS : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		w = Screen.width;
-		h = Screen.height;
+        w = UnityEngine.Screen.width;
+        h = UnityEngine.Screen.height;
 		buttonRect1 = new LTRect(0.10f*w, 0.8f*h, 0.2f*w, 0.14f*h );
 		buttonRect2 = new LTRect(1.2f*w, 0.8f*h, 0.2f*w, 0.14f*h );
 		buttonRect3 = new LTRect(0.35f*w, 0.0f*h, 0.3f*w, 0.2f*h, 0f );
@@ -44,7 +44,7 @@ public class OldGUIExamplesCS : MonoBehaviour {
 		if(GUI.Button( staticRect, "Move Cat")){
 			if(LeanTween.isTweening(grumpyRect)==false){ // Check to see if the cat is already tweening, so it doesn't freak out
 				Vector2 orig = new Vector2( grumpyRect.rect.x, grumpyRect.rect.y );
-				LeanTween.move( grumpyRect, new Vector2( 1.0f*Screen.width - grumpy.width, 0.0f*Screen.height ), 1.0f).setEase(LeanTweenType.easeOutBounce).setOnComplete(catMoved);
+                LeanTween.move(grumpyRect, new Vector2( 1.0f* UnityEngine.Screen.width - grumpy.width, 0.0f* UnityEngine.Screen.height ), 1.0f).setEase(LeanTweenType.easeOutBounce).setOnComplete(catMoved);
 				LeanTween.move( grumpyRect, orig, 1.0f ).setDelay(1.0f).setEase( LeanTweenType.easeOutBounce);
 			}
 		}

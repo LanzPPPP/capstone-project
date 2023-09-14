@@ -8,7 +8,7 @@ public class AnswerNode : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     [HideInInspector] public Transform parentAfterDrag;
     public string answer;
 
-    private Image image;
+    private CanvasGroup canvasGroup;
     private Transform defaultParent;
 
     public static AnswerNode current;
@@ -17,7 +17,7 @@ public class AnswerNode : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     void Awake()
     {
         defaultParent = transform.parent;
-        image = GetComponent<Image>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
     public void ResetNodeParent()
@@ -31,7 +31,7 @@ public class AnswerNode : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
 
-        image.raycastTarget = false;
+        canvasGroup.blocksRaycasts = false;
         current = this;
     }
 
@@ -46,7 +46,7 @@ public class AnswerNode : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         transform.SetParent(parentAfterDrag);
         LayoutRebuilder.ForceRebuildLayoutImmediate(parentAfterDrag.GetComponent<RectTransform>());
 
-        image.raycastTarget = true;
+        canvasGroup.blocksRaycasts = true;
         current = null;
     }
 
@@ -55,7 +55,7 @@ public class AnswerNode : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         if (answer == "")
             answer = "UNASSIGNED VALUE";
 
-        name = answer;
+        name = $"AnsNode: {answer}";
         GetComponentInChildren<TextMeshProUGUI>().text = answer;
     }
 }

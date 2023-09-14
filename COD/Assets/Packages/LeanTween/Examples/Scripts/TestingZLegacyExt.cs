@@ -55,7 +55,7 @@ public class TestingZLegacyExt : MonoBehaviour {
     void OnGUI()
     {
         string label = useEstimatedTime ? "useEstimatedTime" : "timeScale:" + Time.timeScale;
-        GUI.Label(new Rect(0.03f * Screen.width, 0.03f * Screen.height, 0.5f * Screen.width, 0.3f * Screen.height), label);
+        GUI.Label(new Rect(0.03f * UnityEngine.Screen.width, 0.03f * UnityEngine.Screen.height, 0.5f * UnityEngine.Screen.width, 0.3f * UnityEngine.Screen.height), label);
     }
 
     void endlessCallback()

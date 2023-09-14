@@ -3818,7 +3818,7 @@ public class LTRect : System.Object{
 
     public LTRect setUseSimpleScale( bool useSimpleScale){
         this.useSimpleScale = useSimpleScale;
-        this.relativeRect = new Rect(0f,0f,Screen.width,Screen.height);
+        this.relativeRect = new Rect(0f,0f, UnityEngine.Screen.width, UnityEngine.Screen.height);
         return this;
     }
 
@@ -3942,8 +3942,8 @@ public class LTGUI {
 
     public static bool checkOnScreen(Rect rect){
         bool offLeft = rect.x + rect.width < 0f;
-        bool offRight = rect.x > Screen.width;
-        bool offBottom = rect.y > Screen.height;
+        bool offRight = rect.x > UnityEngine.Screen.width;
+        bool offBottom = rect.y > UnityEngine.Screen.height;
         bool offTop = rect.y + rect.height < 0f;
 
         return !(offLeft || offRight || offBottom || offTop);
@@ -3997,7 +3997,7 @@ public class LTGUI {
             }
         }
         if(rect.relativeRect.width==float.PositiveInfinity){
-            rect.relativeRect = new Rect(0f,0f,Screen.width,Screen.height);
+            rect.relativeRect = new Rect(0f,0f, UnityEngine.Screen.width, UnityEngine.Screen.height);
         }
         for(int i = depth*RECTS_PER_LEVEL; i < maxLoop; i++){
             r = levels[i];
@@ -4065,12 +4065,12 @@ public class LTGUI {
         Vector2 vec2 = firstTouch();
         if(vec2.x<0f)
             return false;
-        float vecY = Screen.height-vec2.y;
+        float vecY = UnityEngine.Screen.height- vec2.y;
         return (vec2.x > rect.x && vec2.x < rect.x + rect.width && vecY > rect.y && vecY < rect.y + rect.height);
     }
 
     public static bool checkWithinRect(Vector2 vec2, Rect rect){
-        vec2.y = Screen.height-vec2.y;
+        vec2.y = UnityEngine.Screen.height- vec2.y;
         return (vec2.x > rect.x && vec2.x < rect.x + rect.width && vec2.y > rect.y && vec2.y < rect.y + rect.height);
     }
 

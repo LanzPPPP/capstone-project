@@ -17,36 +17,23 @@ public class DebugTools : MonoBehaviour
     public TextMeshProUGUI vsyncText;
 
 
-    void Awake()
-    {
-        // Set VSync enabled by default
-        QualitySettings.vSyncCount = 1;
-        vsyncText.text = "VSync: true";
-    }
-
     void Update()
     {
         FPSCounter();
 
+        vsyncText.text = QualitySettings.vSyncCount == 1 ? "V-Sync: true" : "V-Sync: false";
         if (Input.GetKeyDown(toggleVsyncKey))
-        {
             ToggleVSync();
-        }
 
         if (Input.GetKeyDown(toggleDebugInfoKey))
-        {
             ToggleDebugInfo();
-        }
     }
-
 
     void ToggleDebugInfo()
     {
         bool v = fpsText.gameObject.activeInHierarchy;
-
         fpsText.transform.parent.gameObject.SetActive(!v);
     }
-
 
     void FPSCounter()
     {
@@ -58,18 +45,8 @@ public class DebugTools : MonoBehaviour
         }
     }
 
-
     void ToggleVSync()
     {
-        if (QualitySettings.vSyncCount == 0)
-        {
-            QualitySettings.vSyncCount = 1;
-            vsyncText.text = "VSync: true";
-        }
-        else
-        {
-            QualitySettings.vSyncCount = 0;
-            vsyncText.text = "VSync: false";
-        }
+        QualitySettings.vSyncCount = QualitySettings.vSyncCount == 0 ? 1 : 0;
     }
 }

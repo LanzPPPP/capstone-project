@@ -5,6 +5,8 @@ using Random = UnityEngine.Random;
 
 public class Clock : MonoBehaviour
 {
+    public bool is24HourFormat;
+
     [Header("Clock Hands")]
     public Transform secondsHand;
     public Transform minuteHand;
@@ -23,6 +25,7 @@ public class Clock : MonoBehaviour
 
     private void UpdateClock()
     {
+
         DateTime currentTime = DateTime.Now;
 
         // 60 seconds/minutes * 6 = 360
@@ -31,7 +34,7 @@ public class Clock : MonoBehaviour
 
         // Fix for 12-hour format
         int currentHourTime = currentTime.Hour;
-        if (currentHourTime > 12)
+        if (!is24HourFormat && currentHourTime > 12)
             currentHourTime -= 12;
 
                                                           // Offset that depends on the minute

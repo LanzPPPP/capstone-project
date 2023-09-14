@@ -24,11 +24,11 @@ public class ProblemSolving : MonoBehaviour
 
         if (totalCorrect != slotNodes.Length)
         {
-            UIController.ShowFeedbackModal("Error", $"{slotNodes.Length - totalCorrect} out of {slotNodes.Length} slots are answered incorrectly or left unanswered.");
+            FeedbackModalControl.Open("Error", $"{slotNodes.Length - totalCorrect} out of {slotNodes.Length} slots are answered incorrectly or left unanswered.");
             return;
         }
 
-        UIController.ShowFeedbackModal("Device Fixed", "Device is now fixed.", () =>
+        FeedbackModalControl.Open("Device Fixed", "Device is now fixed.", () =>
         {
             modalControl.Close();
             isSolved = true;
