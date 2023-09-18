@@ -2102,7 +2102,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &48833728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4273,7 +4273,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &109720441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6758,7 +6758,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &159745328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9349,7 +9349,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &222958149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9813,7 +9813,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4c164beaca302942b408ee3a1dcf97f, type: 3}
 --- !u!1001 &232264414
@@ -9979,7 +9979,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &235392229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10346,7 +10346,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &246154491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10868,7 +10868,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &263644981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13038,7 +13038,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &336008779
 RectTransform:
@@ -15607,7 +15607,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011616473254, guid: 816cb25664a77444d8fe10146eebf44d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15617,7 +15617,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000012170706766, guid: 816cb25664a77444d8fe10146eebf44d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15627,7 +15627,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000013789970022, guid: 816cb25664a77444d8fe10146eebf44d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15637,7 +15637,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816cb25664a77444d8fe10146eebf44d, type: 3}
 --- !u!1001 &382962519
@@ -17695,7 +17695,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011616473254, guid: 816cb25664a77444d8fe10146eebf44d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17705,7 +17705,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000012170706766, guid: 816cb25664a77444d8fe10146eebf44d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17715,7 +17715,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000013789970022, guid: 816cb25664a77444d8fe10146eebf44d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17725,7 +17725,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 816cb25664a77444d8fe10146eebf44d, type: 3}
 --- !u!1001 &427463684
@@ -19327,7 +19327,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &455502404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20390,7 +20390,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000010445157536, guid: 066db65b4adef8142a65c783f7b5d457,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -20400,7 +20400,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011362081056, guid: 066db65b4adef8142a65c783f7b5d457,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -20410,7 +20410,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011483035322, guid: 066db65b4adef8142a65c783f7b5d457,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -20420,7 +20420,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 066db65b4adef8142a65c783f7b5d457, type: 3}
 --- !u!1001 &474969852
@@ -22321,7 +22321,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &514581197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23622,7 +23622,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &541961178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27524,7 +27524,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &653371079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30421,7 +30421,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4c164beaca302942b408ee3a1dcf97f, type: 3}
 --- !u!4 &717332205 stripped
@@ -35376,7 +35376,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!4 &843576318 stripped
 Transform:
@@ -36532,7 +36532,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &860435016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39254,7 +39254,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &934609790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41151,7 +41151,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000010445157536, guid: 066db65b4adef8142a65c783f7b5d457,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -41161,7 +41161,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011362081056, guid: 066db65b4adef8142a65c783f7b5d457,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -41171,7 +41171,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011483035322, guid: 066db65b4adef8142a65c783f7b5d457,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -41181,7 +41181,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 066db65b4adef8142a65c783f7b5d457, type: 3}
 --- !u!4 &978549271 stripped
@@ -42295,7 +42295,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1022366364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43319,7 +43319,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1040832284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43943,7 +43943,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000013850064016, guid: dadd7e94e2e03554a8e3a4c9b9b23967,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -43953,7 +43953,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dadd7e94e2e03554a8e3a4c9b9b23967, type: 3}
 --- !u!1001 &1052231092
@@ -44178,7 +44178,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1054601899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44527,7 +44527,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1067714293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44977,7 +44977,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1078160052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45063,7 +45063,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1078887605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48119,7 +48119,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1148853079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50120,7 +50120,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1184509777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51898,7 +51898,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1226554744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52529,7 +52529,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011483888208, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -52539,7 +52539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000012161254826, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -52549,7 +52549,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000013340909696, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -52559,7 +52559,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3df56ee210d14446b00eb8e8977d6db, type: 3}
 --- !u!1001 &1235836384
@@ -53261,7 +53261,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1253604487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54309,7 +54309,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1276208674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59067,7 +59067,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011483888208, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -59077,7 +59077,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000012161254826, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -59087,7 +59087,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000013340909696, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -59097,7 +59097,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3df56ee210d14446b00eb8e8977d6db, type: 3}
 --- !u!1 &1401809345
@@ -60029,7 +60029,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1426153778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64196,7 +64196,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4c164beaca302942b408ee3a1dcf97f, type: 3}
 --- !u!4 &1509844663 stripped
@@ -67439,7 +67439,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1598199671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68514,7 +68514,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1631589094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69421,7 +69421,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1646124633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71219,7 +71219,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000011483888208, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -71229,7 +71229,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000012161254826, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -71239,7 +71239,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000013340909696, guid: d3df56ee210d14446b00eb8e8977d6db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -71249,7 +71249,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3df56ee210d14446b00eb8e8977d6db, type: 3}
 --- !u!1 &1707209129 stripped
@@ -71305,7 +71305,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1707209136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71663,7 +71663,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1714092833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74038,7 +74038,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1768107856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74328,7 +74328,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!64 &1771176614
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -75872,7 +75872,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     - target: {fileID: 23000013850064016, guid: dadd7e94e2e03554a8e3a4c9b9b23967,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -75882,7 +75882,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dadd7e94e2e03554a8e3a4c9b9b23967, type: 3}
 --- !u!1001 &1815960448
@@ -76392,7 +76392,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1822676728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76871,7 +76871,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &1837642884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87370,7 +87370,7 @@ MonoBehaviour:
   turnedOnMaterial: {fileID: 2100000, guid: 4d5057b5c3f139c478d7c4dec48b5352, type: 2}
   turnedOffMaterial: {fileID: 2100000, guid: b7a0b9c258a8b5642bb4a58051af25e8, type: 2}
   screenMaterialIndex: 1
-  isTurnedOn: 0
+  isTurnedOn: 1
 --- !u!114 &2131404833
 MonoBehaviour:
   m_ObjectHideFlags: 0

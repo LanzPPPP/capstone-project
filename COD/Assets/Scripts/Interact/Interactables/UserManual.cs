@@ -5,7 +5,7 @@ public class UserManual : MonoBehaviour
     public ModalControl computerManualModal;
     public Outline outline;
 
-    private Task task;
+    private UserTask task;
 
 
     void Start()

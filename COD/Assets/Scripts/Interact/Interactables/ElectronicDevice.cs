@@ -9,21 +9,22 @@ public class ElectronicDevice : MonoBehaviour
     private Interactable interactable;
     private Outline outline;
 
-    private Task task;
+    private UserTask task;
     private bool isFixed;
 
 
     void Awake()
     {
         outline = GetComponent<Outline>();
+        deviceScreen = GetComponent<DeviceScreen>();
 
         if (problemModal == null)
         {
+            deviceScreen.ChangeScreen(fixedScreenMaterial);
             Destroy(outline);
             return;
         }
 
-        deviceScreen = GetComponent<DeviceScreen>();
         interactable = GetComponent<Interactable>();
     }
 
@@ -48,12 +49,9 @@ public class ElectronicDevice : MonoBehaviour
         if (isFixed)
             return;
 
-        deviceScreen.turnedOnMaterial = fixedScreenMaterial;
-        deviceScreen.ReloadScreen();
-
+        deviceScreen.ChangeScreen(fixedScreenMaterial);
         Destroy(outline);
 
-        gameObject.name = "Computer (Fixed)";
         interactable.isInteractable = false;
 
         task.Finish();

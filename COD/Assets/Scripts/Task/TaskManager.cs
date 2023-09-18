@@ -8,21 +8,22 @@ public class TaskManager : MonoBehaviour
     public GameObject taskPrefab;
     public ModalControl levelCompleteModalControl;
 
-    private static List<Task> tasks;
+    private static List<UserTask> tasks;
     private static TaskManager _instance;
 
 
     void Awake()
     {
-        tasks = new List<Task>();
+        isLevelCompleted = false;
+        tasks = new List<UserTask>();
         _instance = this;
     }
 
-    public static Task RegisterTask(string taskDescription, Color taskColor)
+    public static UserTask RegisterTask(string taskDescription, Color taskColor)
     {
         GameObject taskInstance = Instantiate(_instance.taskPrefab, _instance.transform);
 
-        Task task = taskInstance.GetComponent<Task>();
+        UserTask task = taskInstance.GetComponent<UserTask>();
         tasks.Add(task);
 
         task.Initialize(taskDescription, taskColor, CheckTasks);
@@ -32,7 +33,7 @@ public class TaskManager : MonoBehaviour
 
     private static void CheckTasks()
     {
-        foreach (Task task in tasks)
+        foreach (UserTask task in tasks)
         {
             if (!task.isFixed)
                 return;

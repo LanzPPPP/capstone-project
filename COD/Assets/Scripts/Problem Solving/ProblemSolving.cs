@@ -24,16 +24,23 @@ public class ProblemSolving : MonoBehaviour
 
         if (totalCorrect != slotNodes.Length)
         {
-            FeedbackModalControl.Open("Error", $"{slotNodes.Length - totalCorrect} out of {slotNodes.Length} slots are answered incorrectly or left unanswered.");
+            MessageBoxControl.ShowOk(
+                "ERROR", 
+                $"{slotNodes.Length - totalCorrect} out of {slotNodes.Length} slots are answered incorrectly or left unanswered."
+                );
+
             return;
         }
 
-        FeedbackModalControl.Open("Device Fixed", "Device is now fixed.", () =>
-        {
-            modalControl.Close();
-            isSolved = true;
-            onFix?.Invoke();
-        });
+        MessageBoxControl.ShowOk(
+            "Device Fixed", 
+            "Device is now fixed.", 
+            () =>
+            {
+                modalControl.Close();
+                isSolved = true;
+                onFix?.Invoke();
+            });
     }
 
     public void ClearAnswers()

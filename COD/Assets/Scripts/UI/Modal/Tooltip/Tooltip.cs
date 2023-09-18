@@ -2,8 +2,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-[ExecuteInEditMode]
 public class Tooltip : MonoBehaviour
 {
     public TextMeshProUGUI title;
@@ -13,7 +11,6 @@ public class Tooltip : MonoBehaviour
     public RectTransform descriptionRect;
 
     public LayoutElement layoutElement;
-
     public RectTransform baseRect;
 
     private CanvasGroup canvasGroup;
@@ -31,7 +28,10 @@ public class Tooltip : MonoBehaviour
 
         this.description.text = description;
 
-        canvasGroup.LeanAlpha(1f, 0.1f);
+        UpdateLocation();
+
+        canvasGroup.LeanAlpha(1f, 0.1f)
+            .setIgnoreTimeScale(true);
 
         layoutElement.enabled = 
             LayoutUtility.GetPreferredWidth(titleRect) >= layoutElement.preferredWidth - 10 ||
@@ -40,10 +40,11 @@ public class Tooltip : MonoBehaviour
 
     public void Close()
     {
-        canvasGroup.LeanAlpha(0f, 0.1f);
+        canvasGroup.LeanAlpha(0f, 0.1f)
+            .setIgnoreTimeScale(true);
     }
 
-    void Update()
+    private void UpdateLocation()
     {
         Vector2 position = Input.mousePosition;
         Vector2 pivot = Vector2.zero;
@@ -61,5 +62,14 @@ public class Tooltip : MonoBehaviour
 
         baseRect.position = position;
         baseRect.pivot = pivot;
+
+    }
+
+    void Update()
+    {
+        if (canvasGroup.alpha == 0)
+            return;
+
+        UpdateLocation();
     }
 }

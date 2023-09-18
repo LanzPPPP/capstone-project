@@ -49,6 +49,11 @@ public class SceneSwitcher : MonoBehaviour
         });
     }
 
+    public static void Restart()
+    {
+        LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public static void LoadMenu()
     {
         LoadScene(0);

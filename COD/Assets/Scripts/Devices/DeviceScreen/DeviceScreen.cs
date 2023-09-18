@@ -8,7 +8,7 @@ public class DeviceScreen : MonoBehaviour
     public bool isTurnedOn;
 
 
-    private void ChangeScreen(Material screenMaterial)
+    public void ChangeScreen(Material screenMaterial)
     {
         Renderer screenRenderer = GetComponent<Renderer>();
         Material[] materials = screenRenderer.sharedMaterials;

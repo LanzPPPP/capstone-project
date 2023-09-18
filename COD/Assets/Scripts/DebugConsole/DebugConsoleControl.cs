@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class DebugConsoleControl : MonoBehaviour
 {
-    public ModalControl consoleModal;
+    public ModalControl consoleModalControl;
     public KeyCode consoleKey;
 
 
     void Update()
     {
         if (Input.GetKeyDown(consoleKey))
-            consoleModal.Toggle();
+            consoleModalControl.Toggle();
     }
 }

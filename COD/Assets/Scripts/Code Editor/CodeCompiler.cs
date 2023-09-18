@@ -1,40 +1,134 @@
 using UnityEngine;
-using System;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.Emit;
-using System.Reflection;
-using System.Linq;
 using System.IO;
 using TMPro;
-using System.Text;
 using Unity.VisualScripting;
-using UnityEngine.UI;
-using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading.Tasks;
+using System.ComponentModel;
 
 public class CodeCompiler : MonoBehaviour
 {
-    public TMP_InputField codeInputText;
+    public TMP_InputField codeInputField;
     public ModalControl consoleModalControl;
-    public TextMeshProUGUI outputText;
+
+    public TextMeshProUGUI outputTMPText;
+    public int outputMaxDisplayLine = 1000;
 
     [Header("Console Colors")]
     public Color errorColor;
 
+    private Process process;
+    private bool isProcessing;
+    private bool justStarted;
 
-    public void ExecuteCode()
+    private int currentLineCount;
+
+
+    #region fileName fix for editor and actual build
+#if UNITY_EDITOR
+    private string fileName = "C:\\Users\\Kurumi\\Desktop\\Test\\Compilers\\C#\\CSCompiler.exe";
+#else
+    private string fileName = $"{Path.GetDirectoryName(Application.dataPath)}/Compilers/C#/CSCompiler.exe";
+#endif
+    #endregion
+
+    public async void ExecuteCode()
     {
-        CompileAndExecuteCode();
-        consoleModalControl.Open();
+        outputTMPText.text = "Compiling...";
+
+        justStarted = true;
+        await CompileAndExecuteViaOutsideProcess();
+
+        // CompileAndExecuteCode();
+    }
+
+    public void StopCurrentExecution()
+    {
+        try
+        {
+            isProcessing = false;
+            process?.Kill();
+            process?.Close();
+        }
+        catch { }
     }
 
     public void CopyCode()
     {
-        GUIUtility.systemCopyBuffer = codeInputText.text;
+        GUIUtility.systemCopyBuffer = codeInputField.text;
     }
 
-    private void CompileAndExecuteCode()
-    { 
+    async Task CompileAndExecuteViaOutsideProcess()
+    {
+        await Task.Run(() =>
+        {
+            isProcessing = true;
+            string code = codeInputField.text.Replace("\"", "\\\"");
+            process = new Process();
+            process.StartInfo.FileName = fileName;
+            process.StartInfo.Arguments = $"\"{code}\"";
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardError = true;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
+
+            process.Start();
+
+            StreamReader reader = process.StandardOutput;
+            StreamReader errorReader = process.StandardError;
+
+            string outputLine;
+            string errorLine;
+
+            while (isProcessing)
+            {
+                isProcessing = !process.HasExited;
+                while ((outputLine = reader.ReadLine()) != null)
+                {
+                    AppendConsoleOutput(outputLine);
+                }
+
+                while ((errorLine = errorReader.ReadLine()) != null)
+                {
+                    AppendConsoleOutput($"<color=#{errorColor.ToHexString()}>{errorLine}</color>");
+                }
+            }
+
+            AppendConsoleOutput("\n<b>Execution finished...</b>");
+
+            process.Close();
+            isProcessing = false;
+        });
+    }
+ 
+    private void AppendConsoleOutput(string newOutput)
+    {
+        MultithreadControl.RunOnMainThread(() =>
+        {
+            if (justStarted)
+            {
+                outputTMPText.text = "";
+                justStarted = false;
+                currentLineCount = 0;
+            }
+
+            if (currentLineCount > outputMaxDisplayLine)
+            {
+                string[] lines = outputTMPText.text.Split("\n");
+                outputTMPText.text = string.Join("\n", lines, 1, lines.Length - 1);
+            }
+
+            outputTMPText.text += newOutput + "\n";
+            currentLineCount++;
+        });
+    }
+
+    /*private void CompileAndExecuteCode()
+    {
+        Destroy(outputTextInstance);
+        outputTextInstance = Instantiate(outputTextGameObject, outputTextParent);
+        TextMeshProUGUI outputText = outputTextInstance.GetComponent<TextMeshProUGUI>();
+
         SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(codeInputText.text);
         string assemblyName = Path.GetRandomFileName();
 
@@ -107,8 +201,6 @@ public class CodeCompiler : MonoBehaviour
             MethodInfo mainMethod = programType.GetMethod("Main", BindingFlags.Static | BindingFlags.Public);
             mainMethod.Invoke(null, new object[] { new string[] { } });
             outputText.text = outputWriter.ToString();
-
-            GC.Collect();
         }
-    }
+    }*/
 }

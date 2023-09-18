@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Task : MonoBehaviour
+public class UserTask : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public Image taskImage;

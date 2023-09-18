@@ -33,11 +33,11 @@ public class PauseModal : MonoBehaviour
 
     public void Restart()
     {
-        FeedbackModalControl.Open(
-            "Restart?",
-            "Restart current level? Your current progress will be lost.",
-            () => { SceneSwitcher.LoadScene(SceneManager.GetActiveScene().buildIndex); },
-            () => {  });
+        MessageBoxControl.ShowYesNo(
+            "RESTART?", 
+            "Your progress will be lost.",
+            () => { SceneSwitcher.Restart(); }
+            );
     }
 
     public void Settings()
@@ -47,11 +47,11 @@ public class PauseModal : MonoBehaviour
 
     public void MainMenu()
     {
-        FeedbackModalControl.Open(
-            "Return to main menu?",
-            "Return to main menu? Your current progress will be lost.",
-            () => { /* TODO: Main Menu */ },
-            () => {  });
+        MessageBoxControl.ShowYesNo(
+            "RETURN TO MAIN MENU?",
+            "Your current progress will be lost.",
+            () => { SceneSwitcher.LoadMenu(); }
+            );
     }
 
     void OnEnable()
